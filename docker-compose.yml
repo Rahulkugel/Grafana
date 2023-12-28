@@ -21,7 +21,9 @@ services:
     image: prom/mysqld-exporter:v0.13.0
     container_name: mysql-exporter
     environment:
-      DATA_SOURCE_NAME: "root:mysql@(host.docker.internal:3306)/"
+      DATA_SOURCE_NAME: "root4:root@(159.89.161.237:3306)/fineract_default"
     ports:
       - "9104:9104"
 
+
+#host.docker.internal:3306
